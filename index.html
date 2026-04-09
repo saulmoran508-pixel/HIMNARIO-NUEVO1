@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Himnario</title>
+</head>
+
+<style>
+body {
+    font-family: Calibri, Arial, sans-serif;
+    background: #f8f9fa;
+    color: black;
+    text-align: center;
+    margin: 0;
+}
+
+/* TITULOS */
+h1 {
+    margin-top: 30px;
+    font-size: 17px;
+}
+
+h2 {
+    font-size: 17px;
+    color: #555;
+}
+
+/* CONTENEDOR */
+#menu, #adoracion, #avivamiento, #aniversario {
+    padding: 20px;
+}
+
+/* BOTONES (VERTICAL) */
+button {
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    background: #d1d5db;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #9ca3af;
+}
+
+/* LISTA */
+ol {
+    list-style: none;
+    padding: 0;
+    max-width: 500px;
+    margin: auto;
+}
+
+/* ITEMS */
+li {
+    margin: 10px 0;
+}
+
+/* LINKS (ALABANZAS) */
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-family: Calibri;
+    background: #e5e7eb; /* gris suave */
+    padding: 12px;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: #d1d5db;
+}
+
+/* TEXTO DE ALABANZAS */
+.letra {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 15px;
+    font-family: Calibri;
+    background: #e5e7eb;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* ANIMACION */
+#menu, #adoracion, #avivamiento, #aniversario {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+</style>
+
+<body>
+
+<!-- MENU -->
+<div id="menu">
+    <h1>Himnario</h1>
+    <h2>Selecciona tipo de alabanzas</h2>
+
+    <button onclick="mostrar('adoracion')">Adoración</button>
+    <button onclick="mostrar('avivamiento')">Avivamiento</button>
+    <button onclick="mostrar('aniversario')">Aniversario</button>
+</div>
+
+<!-- ADORACION -->
+<div id="adoracion" style="display:none;">
+    <h1>Alabanzas de Adoración</h1>
+
+    <ol id="listaAdoracion">
+        <li><a href=""></a></li>
+        
+    </ol>
+
+    <button onclick="volver()">⬅ Volver</button>
+</div>
+
+<!-- AVIVAMIENTO -->
+<div id="avivamiento" style="display:none;">
+    <h1>Alabanzas de Avivamiento</h1>
+
+    <ol id="listaAvivamiento">
+        <li><a href=""></a></li>
+        
+    </ol>
+
+    <button onclick="volver()">⬅ Volver</button>
+</div>
+
+<!-- ANIVERSARIO -->
+<div id="aniversario" style="display:none;">
+    <h1>Alabanzas de aniversario</h1>
+
+    <ol id="listaaniversario">
+        <li><a href="alabanza1.html">MIRA CUAN BUENO</a></li>
+          <li><a href="alabanza2.html">GLORIA Y PODER</a></li>
+             <li><a href="alabanza3.html">BUENO ES ALABARTE OH DIOS</a></li>
+             <li><a href="alabanza4.html">TODOS UNIDOS A UNA VOZ</a></li>
+             <li><a href="alabanza5.html">HAY PODER EN JESÚS</a></li>
+            
+
+    
+    </ol>
+
+    <button onclick="volver()">⬅ Volver</button>
+</div>
+
+<script>
+// MOSTRAR
+function mostrar(tipo) {
+    document.getElementById("menu").style.display = "none";
+    document.getElementById(tipo).style.display = "block";
+}
+
+// VOLVER
+function volver() {
+    document.getElementById("menu").style.display = "block";
+    document.getElementById("adoracion").style.display = "none";
+    document.getElementById("avivamiento").style.display = "none";
+    document.getElementById("aniversario").style.display = "none";
+}
+
+// ORDENAR
+function ordenarLista(id) {
+    let lista = document.getElementById(id);
+    let items = Array.from(lista.getElementsByTagName("li"));
+
+    items.sort((a, b) => {
+        return a.innerText.localeCompare(b.innerText);
+    });
+
+    items.forEach(item => lista.appendChild(item));
+}
+
+ordenarLista("listaAdoracion");
+ordenarLista("listaAvivamiento");
+ordenarLista("listaaniversario");
+</script>
+
+
+</body>
+</html>
