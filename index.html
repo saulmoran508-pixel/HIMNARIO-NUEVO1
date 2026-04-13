@@ -119,7 +119,7 @@ a:hover {
 
     <button onclick="mostrar('adoracion')">Adoración</button>
     <button onclick="mostrar('avivamiento')">Avivamiento</button>
-    <button onclick="mostrar('aniversario')">Aniversario</button>
+    <button onclick="mostrar('listado de quienes dirigen')">listado de quienes dirigen</button>
 </div>
 
 <!-- ADORACION -->
@@ -155,15 +155,12 @@ a:hover {
     <button onclick="volver()">⬅ Volver</button>
 </div>
 
-<!-- ANIVERSARIO -->
-<div id="aniversario" style="display:none;">
+<!-- LISTADO DE QUIENES DIRIGEN -->
+<div id="listado de quienes dirigen" style="display:none;">
     <h1>Alabanzas de aniversario</h1>
 
-    <ol id="listaaniversario">
-             <li><a href="alabanza6.html">DIOS IMPARABLE</a></li>
-             <li><a href="alabanza7.html">ES EXALTADO</a></li>
-             <li><a href="alabanza8.html">LIBRES JESUCRISTO NOS HIZO LIBRES</a></li>
-    
+    <ol id="listado de quienes dirigen">
+             
     </ol>
 
     <button onclick="volver()">⬅ Volver</button>
@@ -181,7 +178,7 @@ function volver() {
     document.getElementById("menu").style.display = "block";
     document.getElementById("adoracion").style.display = "none";
     document.getElementById("avivamiento").style.display = "none";
-    document.getElementById("aniversario").style.display = "none";
+    document.getElementById("listado de quienes dirigen").style.display = "none";
 }
 
 // ORDENAR
@@ -198,7 +195,7 @@ function ordenarLista(id) {
 
 ordenarLista("listaAdoracion");
 ordenarLista("listaAvivamiento");
-ordenarLista("listaaniversario");
+ordenarLista("listado de quienes dirigen");
 </script>
 
 
