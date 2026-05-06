@@ -27,7 +27,7 @@ h2 {
 }
 
 /* CONTENEDOR */
-#menu, #adoracion, #avivamiento, #aniversario {
+#menu, #adoracion, #avivamiento, #lista de quienes pasaran, {
     padding: 20px;
 }
 
@@ -95,7 +95,7 @@ a:hover {
 }
 
 /* ANIMACION */
-#menu, #adoracion, #avivamiento, #lista de quienes dirigen {
+#menu, #adoracion, #avivamiento, #lista de quienes pasaran {
     animation: fadeIn 0.5s ease;
 }
 
@@ -121,7 +121,7 @@ a:hover {
 
     <button onclick="mostrar('adoracion')">Adoración</button>
     <button onclick="mostrar('avivamiento')">Avivamiento</button>
-    <button onclick="mostrar('listado de quienes dirigen')">listado de quienes dirigen</button>
+    <button onclick="mostrar('listado de quienes pasaran')">listado de quienes pasaran</button>
 </div>
 
 <!-- ADORACION -->
@@ -148,9 +148,6 @@ a:hover {
         <li><a href="alabanza4.html">TODOS UNIDOS A UNA VOZ</a></li>
         <li><a href="alabanza5.html">HAY PODER EN JESÚS</a></li>
       
- 
-
-
         
     </ol>
 
@@ -158,11 +155,32 @@ a:hover {
 </div>
 
 <!-- LISTADO DE QUIENES DIRIGEN -->
-<div id="listado de quienes dirigen" style="display:none;">
-    <h1>Alabanzas de aniversario</h1>
+<div id="listado de quienes pasaran" style="display:none;">
+    <h1>listado de quienes pasaran</h1>
 
     <ol id="listado de quienes dirigen">
-             
+         <li><a href="alabanza1.html">PASTOR MOISES AREVALO</a></li>
+        <li><a href="alabanza2.html">PASTOR SAUL CANCINOS</a></li>
+        <li><a href="alabanza3.html">HERMANO PAULINO</a></li>
+        <li><a href="alabanza4.html">PASTOR PEDRO DANIEL</a></li>
+        <li><a href="alabanza5.html">ANCIANOS Y DIACONOS (PENDIENTE)/a></li>
+         <li><a href="alabanza1.html">PASTOR VICTOR CHON</a></li>
+        <li><a href="alabanza2.html">PASTOR NOE MARTINES</a></li>
+        <li><a href="alabanza3.html">PASTOR WALTER MEDA</a></li>
+        <li><a href="alabanza4.html">PASTOR RUBEN LOPEZ</a></li>
+        <li><a href="alabanza5.html">PASTOR DAVID MEDA</a></li>
+         <li><a href="alabanza1.html">PASTOR LUIS PEREZ</a></li>
+        <li><a href="alabanza2.html">HERMANO RUPERTO (PENDIENTE)</a></li>
+        <li><a href="alabanza3.html">PASTOR JOSUE MEDA (PENDIENTE)</a></li>
+        <li><a href="alabanza4.html">HERMANO GERARDO (PENDIENTE)</a></li>
+        <li><a href="alabanza5.html"> PASTOR FACTOR GARCIA (PENDIENTE)</a></li>
+          <li><a href="alabanza1.html">PASTOR FITO ADOLFO GOMEZ</a></li>
+        <li><a href="alabanza2.html">HERMANO RIGOBERTO (PENDIENTE)</a></li>
+        <li><a href="alabanza3.html">HERMANO MOISES (PENDIENTE)</a></li>
+        <li><a href="alabanza4.html">PASTOR EDGAR VALDEZ</a></li>
+        <li><a href="alabanza5.html">PASTOR ISRAEL COLON</a></li>
+              <li><a href="alabanza1.html">PASTOR HERMELINDO</a></li>
+        
     </ol>
 
     <button onclick="volver()">⬅ Volver</button>
@@ -180,7 +198,7 @@ function volver() {
     document.getElementById("menu").style.display = "block";
     document.getElementById("adoracion").style.display = "none";
     document.getElementById("avivamiento").style.display = "none";
-    document.getElementById("listado de quienes dirigen").style.display = "none";
+    document.getElementById("listado de quienes pasaran").style.display = "none";
 }
 
 // ORDENAR
@@ -197,7 +215,7 @@ function ordenarLista(id) {
 
 ordenarLista("listaAdoracion");
 ordenarLista("listaAvivamiento");
-ordenarLista("listado de quienes dirigen");
+ordenarLista("listado de quienes pasaran");
 </script>
 
 
