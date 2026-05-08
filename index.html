@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Himnario</title>
+    <title>ANIVERSARIO PUERTA DEL CIELO</title>
 </head>
 
 <style>
@@ -27,7 +27,7 @@ h2 {
 }
 
 /* CONTENEDOR */
-#menu, #adoracion, #avivamiento, #lista de quienes pasaran{
+#menu, #adoracion, #avivamiento, #programa de servicio{
     padding: 20px;
 }
 
@@ -95,7 +95,7 @@ a:hover {
 }
 
 /* ANIMACION */
-#menu, #adoracion, #avivamiento, #lista de quienes pasaran {
+#menu, #adoracion, #avivamiento, #programa de servicio {
     animation: fadeIn 0.5s ease;
 }
 
@@ -116,12 +116,12 @@ a:hover {
 
 <!-- MENU -->
 <div id="menu">
-    <h1>Himnario</h1>
+    <h1>aniversario puerta del cielo</h1>
     <h2>Selecciona tipo de alabanzas</h2>
 
     <button onclick="mostrar('adoracion')">Adoración</button>
     <button onclick="mostrar('avivamiento')">Avivamiento</button>
-    <button onclick="mostrar('listado de quienes pasaran')">listado de quienes pasaran</button>
+    <button onclick="mostrar('programa de servicio')">programa de servicio</button>
 </div>
 
 <!-- ADORACION -->
@@ -154,33 +154,13 @@ a:hover {
     <button onclick="volver()">⬅ Volver</button>
 </div>
 
-<!-- LISTADO DE QUIENES DIRIGEN -->
-<div id="listado de quienes pasaran" style="display:none;">
-    <h1>listado de quienes pasaran</h1>
+<!-- PROGRAMA DE SERVICIO -->
+<div id="programa de servicio" style="display:none;">
+    <h1>programa de servicio</h1>
 
-    <ol id="listado de quienes dirigen">
-        <li><a href="alabanza.html">PASTOR MOISES AREVALO</a></li>
-        <li><a href="alabanza.html">PASTOR SAUL CANCINOS</a></li>
-        <li><a href="alabanza.html">HERMANO PAULINO</a></li>
-        <li><a href="alabanza.html">PASTOR PEDRO DANIEL</a></li>
-        <li><a href="alabanza.html">ANCIANOS Y DIACONOS (PENDIENTE)</a></li>
-        <li><a href="alabanza.html">PASTOR VICTOR CHON</a></li>
-        <li><a href="alabanza.html">PASTOR NOE MARTINES</a></li>
-        <li><a href="alabanza.html">PASTOR WALTER MEDA</a></li>
-        <li><a href="alabanza.html">PASTOR RUBEN LOPEZ</a></li>
-        <li><a href="alabanza.html">PASTOR DAVID MEDA</a></li>
-        <li><a href="alabanza.html">PASTOR LUIS PEREZ</a></li>
-        <li><a href="alabanza.html">HERMANO RUPERTO (PENDIENTE)</a></li>
-        <li><a href="alabanza.html">PASTOR JOSUE MEDA (PENDIENTE)</a></li>
-        <li><a href="alabanza.html">HERMANO GERARDO (PENDIENTE)</a></li>
-        <li><a href="alabanza.html"> PASTOR FACTOR GARCIA (PENDIENTE)</a></li>
-        <li><a href="alabanza.html">PASTOR FITO ADOLFO GOMEZ</a></li>
-        <li><a href="alabanza.html">HERMANO RIGOBERTO (PENDIENTE)</a></li>
-        <li><a href="alabanza.html">HERMANO MOISES (PENDIENTE)</a></li>
-        <li><a href="alabanza.html">PASTOR EDGAR VALDEZ</a></li>
-        <li><a href="alabanza.html">PASTOR ISRAEL COLON</a></li>
-        <li><a href="alabanza.html">PASTOR HERMELINDO</a></li>
-        
+    <ol id="programa de servicio">
+        <li><a href="alabanza1.html">MIRA CUAN BUENO</a></li>
+       
     </ol>
 
     <button onclick="volver()">⬅ Volver</button>
@@ -198,7 +178,7 @@ function volver() {
     document.getElementById("menu").style.display = "block";
     document.getElementById("adoracion").style.display = "none";
     document.getElementById("avivamiento").style.display = "none";
-    document.getElementById("listado de quienes pasaran").style.display = "none";
+    document.getElementById("programa de servicio").style.display = "none";
 }
 
 // ORDENAR
@@ -215,7 +195,7 @@ function ordenarLista(id) {
 
 ordenarLista("listaAdoracion");
 ordenarLista("listaAvivamiento");
-ordenarLista("listado de quienes pasaran");
+ordenarLista("programa de servicio");
 </script>
 
 
